@@ -124,7 +124,7 @@ export default function Home() {
             <p className="text-blue-700 font-semibold cursor-pointer hover:underline text-sm leading-tight">
               Warmindo Pakdhene Solo - Makan Kenyang Mulai 8Rb
             </p>
-            <p className="text-[11px] text-green-700 font-mono mt-1">Sponsor &middot; warmindoseo.vercel.app</p>
+            <p className="text-[11px] text-green-700 font-mono mt-1">Sponsor &middot; warmindo-seo.vercel.app</p>
             <p className="text-xs text-gray-600 mt-1 leading-snug">
               Tempat nongkrong mahasiswa di Solo dgn Free WiFi &amp; 2 lantai. Buka s/d jam 2 Pagi!
             </p>
