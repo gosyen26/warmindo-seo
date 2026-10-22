@@ -1,69 +1,116 @@
-import Image from "next/image";
+import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Warmindo Pakdhene: Tempat Makan & Nongkrong Murah di Solo',
+  description: 'Cari tempat nongkrong murah di Solo dengan free Wi-Fi? Warmindo Pakdhene buka sampai jam 2 pagi. Harga mulai Rp8.000!',
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+    <main className="min-h-screen bg-gray-50 text-gray-800 font-sans pb-24">
+      {/* HEADER - SEO H1 */}
+      <header className="bg-orange-600 text-white p-8 text-center shadow-md">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Warmindo Pakdhene, Tempat Nongkrong Asyik Mahasiswa Solo
+        </h1>
+        <p className="text-lg max-w-3xl mx-auto">
+          Lagi cari tempat nongkrong murah di Solo yang asyik buat kumpul atau nugas? 
+          <strong> Warmindo Pakdhene</strong> adalah jawabannya! Berlokasi strategis di daerah Panularan, Kec. Laweyan.
+        </p>
+      </header>
+
+      {/* KONTEN UTAMA */}
+      <section className="max-w-4xl mx-auto p-6 mt-6 bg-white rounded-xl shadow-sm border border-gray-100">
+        <h2 className="text-2xl font-bold mb-4 text-orange-600">Kenapa Harus Nongkrong di Sini?</h2>
+        <ul className="list-disc pl-5 mb-8 text-gray-700 space-y-2">
+          <li>Fasilitas <strong>Free Wi-Fi</strong> kencang, cocok buat nugas atau mabar.</li>
+          <li>Area makan dua lantai yang luas dan nyaman.</li>
+          <li>Buka setiap hari mulai pukul <strong>10.00 WIB sampai 02.00 WIB</strong>.</li>
+          <li>Harga sangat bersahabat untuk kantong mahasiswa dan anak kos!</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold mb-6 text-orange-600">Menu Best Seller Kami 🔥</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Menu 1 */}
+          <div className="bg-orange-50 p-4 rounded-lg text-center">
+            <img 
+              src="https://via.placeholder.com/300x200?text=Gambar+Magelangan" 
+              alt="Magelangan Enak di Solo - Warmindo Pakdhene" 
+              className="rounded-md w-full mb-3"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <h3 className="font-bold text-lg">Magelangan</h3>
+            <p className="text-sm text-gray-600 mb-2">Perpaduan nasi &amp; mi goreng bumbu gurih khas.</p>
+            <span className="font-bold text-orange-600">Rp 8.000</span>
+          </div>
+
+          {/* Menu 2 */}
+          <div className="bg-orange-50 p-4 rounded-lg text-center">
+            <img 
+              src="https://via.placeholder.com/300x200?text=Gambar+Ayam+Geprek" 
+              alt="Ayam Geprek Murah di Solo - Warmindo Pakdhene" 
+              className="rounded-md w-full mb-3"
+            />
+            <h3 className="font-bold text-lg">Ayam Geprek</h3>
+            <p className="text-sm text-gray-600 mb-2">Ayam krispi dengan sambal pedas nikmat.</p>
+            <span className="font-bold text-orange-600">Rp 10.000</span>
+          </div>
+
+          {/* Menu 3 */}
+          <div className="bg-orange-50 p-4 rounded-lg text-center">
+            <img 
+              src="https://via.placeholder.com/300x200?text=Gambar+Nasi+Goreng" 
+              alt="Nasi Goreng Murah Solo - Warmindo Pakdhene" 
+              className="rounded-md w-full mb-3"
+            />
+            <h3 className="font-bold text-lg">Nasi Goreng</h3>
+            <p className="text-sm text-gray-600 mb-2">Cita rasa gurih dan aroma khas menggugah selera.</p>
+            <span className="font-bold text-orange-600">Rp 15.000</span>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* WIDGET SIMULASI SEM & KPI (Sesuai Tugas Dosen) */}
+      <div className="fixed bottom-4 right-4 bg-white border border-gray-200 rounded-xl shadow-2xl p-4 w-80 z-50 text-sm">
+        <div className="flex justify-between items-center mb-2 border-b pb-2">
+          <span className="font-bold text-blue-600 flex items-center gap-1">
+            📊 Live SEM &amp; KPI Tracker
+          </span>
+          <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full animate-pulse">Active</span>
+        </div>
+        
+        <div className="mb-3">
+          <p className="text-xs text-gray-500 mb-1">Simulasi Iklan Search (Google Ads):</p>
+          <div className="border border-blue-200 bg-blue-50 p-2 rounded-md">
+            <p className="text-blue-700 font-semibold cursor-pointer hover:underline text-xs">
+              Warmindo Pakdhene Solo - Makan Kenyang Mulai 8Rb
+            </p>
+            <p className="text-[10px] text-green-700 font-mono mt-1">Sponsor &middot; warmindopakdhenesolo.com</p>
+            <p className="text-[11px] text-gray-600 mt-1 leading-tight">
+              Tempat nongkrong mahasiswa di Solo dgn Free WiFi &amp; 2 lantai. Buka s/d jam 2 Pagi!
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-2 text-center mt-3">
+          <div className="bg-gray-50 p-2 rounded-md border">
+            <p className="text-xs text-gray-500 font-semibold">Budget/Hari</p>
+            <p className="font-bold text-gray-800">Rp 30.000</p>
+          </div>
+          <div className="bg-gray-50 p-2 rounded-md border">
+            <p className="text-xs text-gray-500 font-semibold">Target CTR</p>
+            <p className="font-bold text-green-600">8.5%</p>
+          </div>
+          <div className="bg-gray-50 p-2 rounded-md border">
+            <p className="text-xs text-gray-500 font-semibold">Est. CPC</p>
+            <p className="font-bold text-gray-800">Rp 850</p>
+          </div>
+          <div className="bg-gray-50 p-2 rounded-md border">
+            <p className="text-xs text-gray-500 font-semibold">Conv. Rate</p>
+            <p className="font-bold text-blue-600">12%</p>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
