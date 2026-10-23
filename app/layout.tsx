@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Warmindo Pakdhene: Tempat Makan & Nongkrong Murah di Solo',
   description: 'Cari tempat nongkrong murah di Solo dengan free Wi-Fi? Warmindo Pakdhene buka sampai jam 2 pagi. Harga mulai Rp8.000!',
   keywords: [
+    'warmindo pakdhene solo',
     'warmindo solo', 
     'tempat nongkrong murah solo', 
     'warmindo pakdhene', 
