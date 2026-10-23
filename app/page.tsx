@@ -74,7 +74,7 @@ export default function Home() {
           {/* Menu 1 */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
             <div className="h-48 overflow-hidden bg-gray-200">
-              <img src="https://via.placeholder.com/400x300/ffedd5/ea580c?text=Magelangan" alt="Magelangan Enak di Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
+              <img src="image/magelangan.png" alt="Magelangan Enak di Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
             </div>
             <div className="p-6 text-center">
               <h3 className="font-bold text-2xl text-gray-800 mb-2">Magelangan</h3>
@@ -86,7 +86,7 @@ export default function Home() {
           {/* Menu 2 */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
             <div className="h-48 overflow-hidden bg-gray-200">
-              <img src="https://via.placeholder.com/400x300/ffedd5/ea580c?text=Ayam+Geprek" alt="Ayam Geprek Murah di Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
+              <img src="/image/ayam-geprek.png" alt="Ayam Geprek Murah di Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
             </div>
             <div className="p-6 text-center">
               <h3 className="font-bold text-2xl text-gray-800 mb-2">Ayam Geprek</h3>
@@ -98,7 +98,7 @@ export default function Home() {
           {/* Menu 3 */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
             <div className="h-48 overflow-hidden bg-gray-200">
-              <img src="https://via.placeholder.com/400x300/ffedd5/ea580c?text=Nasi+Goreng" alt="Nasi Goreng Murah Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
+              <img src="/image/nasi-goreng.png" alt="Nasi Goreng Murah Solo - Warmindo Pakdhene" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
             </div>
             <div className="p-6 text-center">
               <h3 className="font-bold text-2xl text-gray-800 mb-2">Nasi Goreng</h3>
